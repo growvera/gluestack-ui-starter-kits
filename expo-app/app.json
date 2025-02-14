@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "expo-app",
-    "slug": "expo-app",
+    "slug": "glue-test",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -17,14 +17,17 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.gluestack.expoapp"
+      "bundleIdentifier": "com.growvera.expoapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.gluestack.expoapp"
+      "package": "com.growvera.expoapp"
     },
     "web": {
       "bundler": "metro",
@@ -43,7 +46,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "148098d1-7e19-4326-9814-dd661a192776"
+        "projectId": "a6381b09-407c-4293-ab0e-f70e64f1874c"
       }
     },
     "runtimeVersion": {
@@ -52,6 +55,6 @@
     "updates": {
       "url": "https://u.expo.dev/148098d1-7e19-4326-9814-dd661a192776"
     },
-    "owner": "gluestack"
+    "owner": "growvera"
   }
 }

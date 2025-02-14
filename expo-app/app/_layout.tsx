@@ -18,8 +18,8 @@ export {
 } from "expo-router";
 
 export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: "(tabs)",
+  // Update initialRouteName to a valid route
+  initialRouteName: "auth/signin",
 };
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -56,13 +56,14 @@ function RootLayoutNav() {
     <GluestackUIProvider mode={(colorScheme ?? "light") as "light" | "dark"}>
       <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
         <Stack screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="signin" />
-          <Stack.Screen name="signup" />
-          <Stack.Screen name="forgot-password" />
-          <Stack.Screen name="create-password" />
-          <Stack.Screen name="news-feed" />
-          <Stack.Screen name="dashboard" />
-          <Stack.Screen name="profile" />
+          <Stack.Screen name="auth/signin" />
+          <Stack.Screen name="auth/signup" />
+          <Stack.Screen name="auth/forgot-password" />
+          <Stack.Screen name="auth/create-password" />
+          <Stack.Screen name="auth/splash-screen" />
+          <Stack.Screen name="news-feed/news-and-feed" />
+          <Stack.Screen name="dashboard/dashboard-layout" />
+          <Stack.Screen name="profile/profile" />
         </Stack>
       </ThemeProvider>
     </GluestackUIProvider>
